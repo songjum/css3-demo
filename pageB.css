@@ -1,0 +1,112 @@
+.layerB {
+    position: relative;
+}
+
+.b_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/QixiB-dark.png);
+    background-size: 100% 100%;
+}
+
+.b_background_preload {
+    background: url(images/QixiB-bright.png) no-repeat -9999px -9999px;
+}
+
+.lamp-bright {
+    background-image: url(images/QixiB-bright.png);
+}
+
+.shop {
+    position: absolute;
+    top: 36.5%;
+    left: 29%;
+    width: 39.5%;
+    height: 35.5%;
+}
+
+.door {
+    position: absolute;
+    top: 32%;
+    left: 58.5%;
+    overflow: hidden;
+    width: 32%;
+    height: 100%;
+    height: 68%;
+}
+
+.door-left,.door-right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.door-left {
+    left: 0;
+    background: url(images/door-left.png);
+    background-size: 100% 100%;
+}
+
+.door-right {
+    left: 50%;
+    background: url(images/door-right.png);
+    background-size: 100% 100%;
+}
+
+.bird {
+    position: absolute;
+    top: 10%;
+    right: -91px;
+    z-index: 10;
+    min-width: 91px;
+    min-height: 71px;
+    background: url(images/bird.png) -182px 0 no-repeat;
+}
+
+.birdFly {
+    -webkit-animation-name: bird-slow;
+    -webkit-animation-duration: 400ms;
+    -webkit-animation-timing-function: step-start;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: bird-slow;
+    -moz-animation-duration: 400ms;
+    -moz-animation-timing-function: step-start;
+    -moz-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bird-slow {
+    0% {
+        background-position: -182px 0;
+    }
+
+    50% {
+        background-position: 0 0;
+    }
+
+    75% {
+        background-position: -91px 0;
+    }
+
+    100% {
+        background-position: -182px 0;
+    }
+}
+
+@-moz-keyframes bird-slow {
+    0% {
+        background-position: -182px 0;
+    }
+
+    50% {
+        background-position: 0 0;
+    }
+
+    75% {
+        background-position: -91px 0;
+    }
+
+    100% {
+        background-position: -182px 0;
+    }
+}
